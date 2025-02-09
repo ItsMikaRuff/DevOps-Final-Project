@@ -4,3 +4,6 @@ https://0757-2a0d-6fc2-5b61-2300-4dc0-3e86-12dd-f05f.ngrok-free.app/
 3.	לינק OUTPUT בפורמט HTML – https://0757-2a0d-6fc2-5b61-2300-4dc0-3e86-12dd-f05f.ngrok-free.app/job/Final-Project/17/User_20Data_20Output// 
 4.	הסקריפט נמצא בgitHub : https://github.com/ItsMikaRuff/DevOps-Final-Project 
 5.	ניתן לבצע Clone לRepository ולערוך את הקבצים בVS Code .
+ 
+
+6.	בונוס – נוסף עיצוב HTML בסיסי לקובץ USER DATA OUTPUT.
