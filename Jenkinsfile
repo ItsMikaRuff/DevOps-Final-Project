@@ -10,13 +10,16 @@ pipeline {
         stage('Validate Input & Calculate Year of Birth') {
             steps {
                 script {
+
                     def name = params.NAME.trim()
                     def age = params.AGE.trim()
                     def currentYear = new Date().format("yyyy").toInteger()
                     def outputMessage = ""
 
                     // בדיקת שם – חייב להכיל רק אותיות ורווחים
+
                     def namePattern = /^[A-Za-z\s]+$/
+
                     if (!name.matches(namePattern)) {
                         outputMessage = "<h2 style='color:red;'>Invalid Input: Name must contain only letters and spaces.</h2>"
                         echo "Invalid name input!"
@@ -24,6 +27,7 @@ pipeline {
 
                     // בדיקת גיל – חייב להיות מספר שלם
                     def birthYear = 0
+                    
                     if (age.isInteger()) {
                         def ageInt = age.toInteger()
                         if (ageInt > 0 && ageInt < 150) {
